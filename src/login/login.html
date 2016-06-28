@@ -1,0 +1,29 @@
+<template>
+  <nav class="see-thru-nav">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Discoverbean</a>
+    </div>
+  </nav>
+  <div class="row">
+    <form class="col s4 offset-s4" submit.delegate="login()">
+      <div class="login-box">
+        <h2 class="flow-text center-align">Login</h2>
+        <div class="input-field">
+          <input id="username" type="text" value.bind="username" accept=""class="validate">
+          <label for="username">Username</label>
+        </div>
+        <div class="input-field">
+          <input id="password" type="password" value.bind="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+        <br>
+        <div class="center-align">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Login
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+        <span class="text-danger">${error}</span>
+      </div>
+    </form>
+  </div>
+</template>
